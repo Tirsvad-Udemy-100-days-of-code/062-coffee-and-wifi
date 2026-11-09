@@ -60,7 +60,15 @@ Leave the environment with `deactivate`. The `.venv` folder is ignored by git.
 
 ## ▶️ Run
 
-The web application arrives with milestone MIL-002; this section is completed then.
+With the environment active:
+
+```bash
+python -m coffee_and_wifi
+```
+
+Open <http://127.0.0.1:5000/> for the home page and click "Show Me!" to reach `/cafes`. The secret form is at <http://127.0.0.1:5000/add>; nothing links to it.
+
+Optional environment variables: `SECRET_KEY` (a random key is generated at start when it is not set) and `COFFEE_AND_WIFI_DATA_FILE` (path of the CSV file; the default is the file in the package).
 
 ## 🧪 Tests
 
