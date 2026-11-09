@@ -45,7 +45,7 @@
 
 ## Overall Verdict
 
-Go-with-conditions — every Mandatory criterion that can be checked in the repository passes; criterion 14 is Pending until the wiki is published. Stand-in review in autonomous mode (`Mode: autonomous, not independent`); S01 may challenge it in the final summary.
+Go-with-conditions — every Mandatory criterion that can be checked in the repository passes; criterion 14 was Pending until the wiki was published and passes in [RC-012]. Stand-in review in autonomous mode (`Mode: autonomous, not independent`); S01 may challenge it in the final summary.
 
 ## Action Items
 
@@ -57,3 +57,5 @@ Go-with-conditions — every Mandatory criterion that can be checked in the repo
 
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
 [1a4dff5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/1a4dff5be9182b072fd724ef71189827629ae32e
+
+[RC-012]: ./rc-012-wiki-published.md
