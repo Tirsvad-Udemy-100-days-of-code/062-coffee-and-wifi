@@ -11,8 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [40ac86a] |
-| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-001 (Go, autonomous, not independent) | [40ac86a] |
+| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Scope: add hardening of the OpenGrep findings (MIL-005) | pending |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-013 (Go, autonomous, not independent) | pending |
 
 ---
 
@@ -48,6 +48,7 @@ A documented, tested and screenshot-illustrated solution lets course participant
 - `pyproject.toml`, `constants.py`, Python `.gitignore`, `Doxyfile`, Doxygen comments, `.venv` instructions.
 - README from the framework template; wiki in en, da and ms; screenshots taken in a container.
 - Repository description and topics.
+- Hardening of the findings of the git host code scan (OpenGrep): CSV formula injection and a pinned container base image.
 
 ### Out of Scope
 
