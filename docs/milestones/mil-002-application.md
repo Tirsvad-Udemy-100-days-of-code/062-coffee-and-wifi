@@ -11,8 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | pending |
-| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-005 (Go, autonomous, not independent) | pending |
+| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [40ac86a] |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-005 (Go, autonomous, not independent) | [40ac86a] |
 
 ---
 
@@ -73,3 +73,4 @@ A Flask application under `src/` (home, `/cafes`, secret `/add`) with a CSV repo
 ---
 
 [BC-001]: ../business-case.md
+[40ac86a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/40ac86a92ce1d06f218c8f65b8faaee1d5cd018e
