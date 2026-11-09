@@ -11,14 +11,14 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [40ac86a] |
-| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-003 (Go, autonomous, not independent) | [40ac86a] |
+| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Add gateway MIL-005 Hardening after the OpenGrep notices; status column updated for the closed gateways | [ba840a5] |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-014 (Go, autonomous, not independent) | [ba840a5] |
 
 ---
 
 ## Purpose
 
-Schedules the four phases that deliver Coffee and Wifi (Day 62): the project foundation, the Flask application with tests, the screenshots with the README, and the trilingual wiki. One branch and one pull request per phase.
+Schedules the five phases that deliver Coffee and Wifi (Day 62): the project foundation, the Flask application with tests, the screenshots with the README, the trilingual wiki, and the hardening of the code scan findings. One branch and one pull request per phase.
 
 ## Planning Assumptions
 
@@ -31,10 +31,11 @@ Schedules the four phases that deliver Coffee and Wifi (Day 62): the project fou
 
 | Gateway | Document | Window | Decision date | Owner | Stories | Main deliverable | Milestone |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Foundation | [MIL-001] | 2026-11-09 | 2026-11-09 | S01 | none (plain tasks) | Project skeleton, repository metadata, tooling | pending sync |
-| Application | [MIL-002] | 2026-11-10 | 2026-11-10 | S01 | none (plain tasks) | Working Flask app with pytest suite | pending sync |
-| Screenshots and README | [MIL-003] | 2026-11-11 | 2026-11-11 | S01 | none (plain tasks) | One screenshot per lecture step, README | pending sync |
-| Wiki | [MIL-004] | 2026-11-12 | 2026-11-12 | S01 | none (plain tasks) | Wiki in en, da and ms | pending sync |
+| Foundation | [MIL-001] | 2026-11-09 | 2026-11-09 | S01 | none (plain tasks) | Project skeleton, repository metadata, tooling | closed |
+| Application | [MIL-002] | 2026-11-10 | 2026-11-10 | S01 | none (plain tasks) | Working Flask app with pytest suite | closed |
+| Screenshots and README | [MIL-003] | 2026-11-11 | 2026-11-11 | S01 | none (plain tasks) | One screenshot per lecture step, README | closed |
+| Wiki | [MIL-004] | 2026-11-12 | 2026-11-12 | S01 | none (plain tasks) | Wiki in en, da and ms | closed |
+| Hardening | [MIL-005] | 2026-11-10 | 2026-11-10 | S01 | none (plain tasks) | CSV formula injection fixed and container base image pinned | pending sync |
 
 ```plantuml
 @startgantt
@@ -47,6 +48,8 @@ Project starts 2026-11-09
 [Screenshots and README Go/No-Go] happens 2026-11-11
 [Wiki] starts 2026-11-12 and ends 2026-11-12
 [Wiki Go/No-Go] happens 2026-11-12
+[Hardening] starts 2026-11-10 and ends 2026-11-10
+[Hardening Go/No-Go] happens 2026-11-10
 @endgantt
 ```
 
@@ -58,11 +61,13 @@ Project starts 2026-11-09
 | Flask application and pytest tests | MIL-002 |
 | Screenshots and README | MIL-003 |
 | Wiki in en, da and ms | MIL-004 |
+| Hardening of the OpenGrep findings | MIL-005 |
 
 ## Dependencies
 
 ```
 MIL-001 → MIL-002 → MIL-003 → MIL-004
+MIL-002 → MIL-005 (MIL-005 changes the code of MIL-002 and the image of MIL-003, and may run after MIL-004 is closed)
 ```
 
 ## No-Go Handling
@@ -88,4 +93,6 @@ A No-Go on a gateway stops every later gateway (see Dependencies). The owner fix
 [MIL-002]: ./milestones/mil-002-application.md
 [MIL-003]: ./milestones/mil-003-screenshots-readme.md
 [MIL-004]: ./milestones/mil-004-wiki.md
+[MIL-005]: ./milestones/mil-005-hardening.md
 [40ac86a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/40ac86a92ce1d06f218c8f65b8faaee1d5cd018e
+[ba840a5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/ba840a51f9f6ec2ac266cce649c16bd38b351af6
