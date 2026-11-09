@@ -104,3 +104,10 @@ def test_every_local_link_resolves(client: FlaskClient, route: str) -> None:
     assert local
     for href in local:
         assert client.get(href).status_code == 200, href
+
+
+def test_add_with_formula_name_stores_it_with_a_quote_prefix(
+    client: FlaskClient, data_file: Path
+) -> None:
+    client.post(ROUTE_ADD, data={**VALID_FORM, "cafe": "=1+1"})
+    assert _lines(data_file)[-1].startswith("'=1+1,")

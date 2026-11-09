@@ -32,6 +32,12 @@ CSV_HEADER: tuple[str, ...] = (
     "Power",
 )
 
+## @brief Leading characters that make a spreadsheet read a cell as a formula.
+CSV_FORMULA_TRIGGERS: tuple[str, ...] = ("=", "+", "-", "@", "\t", "\r")
+
+## @brief Text put before a cell that starts with a formula trigger.
+CSV_FORMULA_ESCAPE: str = "'"
+
 ## @brief Route of the home page.
 ROUTE_HOME: str = "/"
 

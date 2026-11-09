@@ -1,5 +1,6 @@
 # Headless screenshot tool. Playwright exists only in this image, not in pyproject.toml.
-FROM mcr.microsoft.com/playwright/python:v1.55.0-noble
+# Pinned by digest for reproducible builds; the tag it was taken from is v1.55.0-noble.
+FROM mcr.microsoft.com/playwright/python:v1.55.0-noble@sha256:640d578aae63cfb632461d1b0aecb01414e4e020864ac3dd45a868dc0eff3078
 
 # The project needs Python 3.13, the base image ships an older one: use a uv managed venv.
 # The interpreter is installed under /opt/python so the unprivileged user can read it.
