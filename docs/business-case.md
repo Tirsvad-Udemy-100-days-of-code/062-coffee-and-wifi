@@ -11,8 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Scope: add hardening of the OpenGrep findings (MIL-005) | pending |
-| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-013 (Go, autonomous, not independent) | pending |
+| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Scope: add hardening of the OpenGrep findings (MIL-005) | [ba840a5] |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-013 (Go, autonomous, not independent) | [ba840a5] |
 
 ---
 
@@ -128,3 +128,4 @@ Proceed — the scope is small, the risks are mitigated and the outcome serves a
 ---
 
 [40ac86a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/40ac86a92ce1d06f218c8f65b8faaee1d5cd018e
+[ba840a5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/ba840a51f9f6ec2ac266cce649c16bd38b351af6

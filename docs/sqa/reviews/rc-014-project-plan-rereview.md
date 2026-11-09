@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | pending |
+| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [ba840a5] |
 
 ---
 
@@ -71,3 +71,4 @@ Go — every Mandatory criterion passes. Stand-in review in autonomous mode (`Mo
 
 [PP-001]: ../../project-plan.md
 [QC-PP-001]: ../../../framework/qc/artifacts/qc-project-plan.md
+[ba840a5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/ba840a51f9f6ec2ac266cce649c16bd38b351af6

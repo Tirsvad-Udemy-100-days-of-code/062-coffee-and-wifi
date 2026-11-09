@@ -11,8 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | pending |
-| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-015 (Go, autonomous, not independent) | pending |
+| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [ba840a5] |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-015 (Go, autonomous, not independent) | [ba840a5] |
 
 ---
 
@@ -70,3 +70,4 @@ A CSV repository that neutralises cells that a spreadsheet would read as formula
 ---
 
 [BC-001]: ../business-case.md
+[ba840a5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/ba840a51f9f6ec2ac266cce649c16bd38b351af6
