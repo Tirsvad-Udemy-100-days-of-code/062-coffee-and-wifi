@@ -16,7 +16,7 @@ document of a type. `Primary File` may contain a glob (e.g.
 | PP | Project Plan | docs/project-plan.md | 002 |
 | MIL | Milestone / Gateway | docs/milestones/mil-*.md | 005 |
 | ADR | Architecture Decision Record | docs/adr/adr-*.md | 0001 |
-| RC | SQA Review Record | docs/sqa/reviews/rc-*.md | 008 |
+| RC | SQA Review Record | docs/sqa/reviews/rc-*.md | 009 |
 
 ## Languages
 
@@ -31,7 +31,7 @@ exists once, in that language, under its normal name (`business-case.md`); the
 | PO domain | it |
 | High-level register | IT Executive English |
 | Technical register | IT Professional English |
-| Wiki languages | en and the PO language, at least (`framework/process/wiki.md`) |
+| Wiki languages | en, da and ms (`framework/process/wiki.md`) |
 
 Every artifact of a type marked "Yes" below states its language and domain in
 its `Language` and `Domain` Metadata rows; `new-artifact.sh` fills them from
