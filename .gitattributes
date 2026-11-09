@@ -1,0 +1,3 @@
+# Normalise line endings to LF in the repository; Windows tools must not rewrite them.
+* text=auto eol=lf
+*.png binary
