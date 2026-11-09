@@ -27,6 +27,22 @@ The site has three pages: the home page with a "Show Me!" button, `/cafes` with 
 
 The code is documented with Doxygen comments; `Doxyfile` builds the HTML reference.
 
+### Lecture steps in pictures
+
+One screenshot for each step of the assignment. They are taken headless in a Docker container (`bash tools/screenshots/run.sh`), never on your desktop. The wiki explains what each step teaches.
+
+| Step | Screenshot |
+| --- | --- |
+| 1. The home page uses `css/styles.css` | ![The styled home page](docs/screenshots/01-home-page.png) |
+| 2. `/cafes` shows a Bootstrap table of all cafes | ![The cafes table](docs/screenshots/02-cafes-table.png) |
+| 3. Location URLs become "Maps Link" anchors | ![The Maps Link column](docs/screenshots/03-maps-links.png) |
+| 4. "Show Me!" takes you to the cafes page | ![The cafes page reached from the button](docs/screenshots/04-show-me-button.png) |
+| 5. The secret `/add` route shows the form (`render_form`) | ![The add form](docs/screenshots/05-secret-add-form.png) |
+| 6. The location field validates the URL | ![The URL validation error](docs/screenshots/06-url-validation-error.png) |
+| 7. A valid submit adds the cafe | ![The new cafe in the table](docs/screenshots/07-cafe-added.png) |
+| 8. The cafe is appended to `cafe-data.csv` | ![The end of the CSV file](docs/screenshots/08-csv-appended.png) |
+| 9. All navigation links work | ![The add page with its link](docs/screenshots/09-navigation-links.png) |
+
 ## 📋 Requirements
 
 - Python 3.13 or newer, because `pyproject.toml` requires it.
