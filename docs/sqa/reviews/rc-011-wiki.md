@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | pending |
+| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [1a4dff5] |
 
 ---
 
@@ -56,3 +56,4 @@ Go-with-conditions — every Mandatory criterion that can be checked in the repo
 ---
 
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
+[1a4dff5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/1a4dff5be9182b072fd724ef71189827629ae32e
