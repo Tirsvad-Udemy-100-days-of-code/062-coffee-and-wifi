@@ -13,7 +13,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Add gateway MIL-005 Hardening after the OpenGrep notices; status column updated for the closed gateways | [ba840a5] |
 | 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-014 (Go, autonomous, not independent) | [ba840a5] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway G6 (MIL-006) with its schedule row, scope coverage, dependency, risk and Gantt entries; recorded the move of the end date, the domain, the open pull request #34 and the stale links of two review records in the Planning Assumptions and Open Issues; replaced the status words in the milestone column of MIL-001 to MIL-005 by the links to the milestones on the git host; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway G6 (MIL-006) with its schedule row, scope coverage, dependency, risk and Gantt entries; recorded the move of the end date, the domain, the open pull request #34 and the stale links of two review records in the Planning Assumptions and Open Issues; replaced the status words in the milestone column of MIL-001 to MIL-005 by the links to the milestones on the git host; set the domain to education; reviewed in autonomous mode, not independent | [61eeec6] |
 
 ---
 
@@ -120,3 +120,4 @@ A No-Go on a gateway stops every later gateway (see Dependencies). The owner fix
 [ms-407]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/milestone/407
 [MIL-006]: ./milestones/mil-006-framework-baseline.md
 [ms-583]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/milestone/583
+[61eeec6]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/61eeec673734af9b8f1de5aa1b7641f37a42d07e

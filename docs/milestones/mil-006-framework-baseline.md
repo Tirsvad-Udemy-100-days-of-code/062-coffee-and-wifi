@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; accepted with the Go verdict of the review record (autonomous, not independent) | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; accepted with the Go verdict of the review record (autonomous, not independent) | [61eeec6] |
 
 ---
 
@@ -77,3 +77,4 @@ A merged pull request that holds: the updated Business Case, Project Plan and Ar
 [BC-001]: ../business-case.md
 [PP-001]: ../project-plan.md
 [MIL-005]: ./mil-005-hardening.md
+[61eeec6]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/61eeec673734af9b8f1de5aa1b7641f37a42d07e

@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; created with the baseline milestone and its review records (autonomous, not independent) | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; created with the baseline milestone and its review records (autonomous, not independent) | [61eeec6] |
 
 ---
 
@@ -86,3 +86,4 @@ The domain of BC-001, PP-001 and MIL-006 is `education` since MIL-006; the other
 [RC-018]: ./reviews/rc-018-project-plan-baseline.md
 [RC-019]: ./reviews/rc-019-milestone-006.md
 [RC-020]: ./reviews/rc-020-wiki-baseline.md
+[61eeec6]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/61eeec673734af9b8f1de5aa1b7641f37a42d07e

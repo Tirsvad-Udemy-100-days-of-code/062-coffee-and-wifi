@@ -13,7 +13,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Scope: add hardening of the OpenGrep findings (MIL-005) | [ba840a5] |
 | 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-013 (Go, autonomous, not independent) | [ba840a5] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 6, a scope item, an out-of-scope item, a risk and two constraints for the baseline milestone MIL-006; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 6, a scope item, an out-of-scope item, a risk and two constraints for the baseline milestone MIL-006; set the domain to education; reviewed in autonomous mode, not independent | [61eeec6] |
 
 ---
 
@@ -139,3 +139,4 @@ Proceed — the scope is small, the risks are mitigated and the outcome serves a
 [SA-001]: ./stakeholder-analysis.md
 [PP-001]: ./project-plan.md
 [MIL-006]: ./milestones/mil-006-framework-baseline.md
+[61eeec6]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/61eeec673734af9b8f1de5aa1b7641f37a42d07e
