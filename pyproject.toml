@@ -18,6 +18,11 @@ dependencies = [
     "Bootstrap-Flask>=2.4",
 ]
 
+[project.urls]
+Repository = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi"
+Documentation = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/wiki"
+"Issue tracker" = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/issues"
+
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0",

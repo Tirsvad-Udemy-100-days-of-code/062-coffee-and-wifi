@@ -23,7 +23,11 @@ The site has three pages: the home page with a "Show Me!" button, `/cafes` with 
 | --- | --- |
 | `src/coffee_and_wifi/` | The application: `constants.py`, templates, static files and the data file |
 | `tests/` | The pytest tests |
-| `docs/` | The project documents (business case, plan, milestones, reviews) |
+| `docs/` | The project documents (business case, plan, milestones, reviews), the screenshots and the wiki pages |
+| `tools/screenshots/` | The tool that takes the lecture screenshots in a Docker container |
+| `framework/` | The SQA and QC framework (a git submodule) that the project documents follow |
+| `.editorconfig` | The editor settings of the framework baseline |
+| `.env.example` | Placeholders for the git host tokens that the framework scripts read, and for the two optional settings of the program (`SECRET_KEY`, `COFFEE_AND_WIFI_DATA_FILE`); the program itself reads no `.env` file |
 
 The code is documented with Doxygen comments; `Doxyfile` builds the HTML reference.
 
@@ -98,7 +102,7 @@ Build the code reference (optional) with `doxygen Doxyfile`; the result is in `d
 
 ## 📄 License
 
-GNU Affero General Public License v3.0, see [LICENSE](./LICENSE).
+GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later), see [LICENSE](./LICENSE).
 
 ## 🔗 Links
 
@@ -110,25 +114,19 @@ GNU Affero General Public License v3.0, see [LICENSE](./LICENSE).
 
 | Document | What it tells you |
 | --- | --- |
-| [AGENTS.md][agents] | The rules AI agents follow in this repository |
 | [Business Case][BC-001] | Why the project exists, its scope and success criteria |
 | [Stakeholder Analysis][SA-001] | Who is involved; the stakeholder IDs used for owners and reviewers |
 | [Project Plan][PP-001] | The gateways and their schedule |
 | [Milestones][milestones] | One document per gateway: Go/No-Go criteria and tasks |
 | [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
-| [Framework README][framework-readme] | The framework this project uses |
-| [Framework changelog][framework-changelog] | What changed in each framework release |
 
 ---
 
 [repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi
 [documentation]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/wiki
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/issues
-[agents]: ./AGENTS.md
 [BC-001]: ./docs/business-case.md
 [SA-001]: ./docs/stakeholder-analysis.md
 [PP-001]: ./docs/project-plan.md
 [milestones]: ./docs/milestones/
 [registry]: ./docs/artifact-registry.md
-[framework-readme]: ./framework/README.md
-[framework-changelog]: ./framework/CHANGELOG.md
