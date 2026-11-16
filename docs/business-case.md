@@ -4,15 +4,16 @@
 | Key | Value |
 | --- | --- |
 | ID | BC-001 |
-| CrossReference | |
+| CrossReference | [SA-001], [PP-001], [MIL-006] |
 | Language | en |
-| Domain | it |
+| Domain | education |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 | Scope: add hardening of the OpenGrep findings (MIL-005) | [ba840a5] |
-| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-013 (Go, autonomous, not independent) | [ba840a5] |
+| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Accepted after RC-013 (Go, autonomous, not independent) | [ba840a5] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 6, a scope item, an out-of-scope item, a risk and two constraints for the baseline milestone MIL-006; set the domain to education; reviewed in autonomous mode, not independent | [61eeec6] |
 
 ---
 
@@ -39,6 +40,7 @@ A documented, tested and screenshot-illustrated solution lets course participant
 3. Provide pytest tests for the CSV handling, the form validation and the routes.
 4. Provide a README and a wiki in English, Danish and Bahasa Malaysia, each with a screenshot per lecture step and an explanation of what was gained.
 5. Set the repository description and topics on the git host.
+6. Bring the finished project to the common baseline of the framework: the adopted framework release, a README that lists only the documents of the repository, project URL metadata, the editor settings of the baseline, an `.env.example` in the framework's form and a traceability matrix ([MIL-006]).
 
 ## Scope
 
@@ -49,12 +51,14 @@ A documented, tested and screenshot-illustrated solution lets course participant
 - README from the framework template; wiki in en, da and ms; screenshots taken in a container.
 - Repository description and topics.
 - Hardening of the findings of the git host code scan (OpenGrep): CSV formula injection and a pinned container base image.
+- The baseline milestone [MIL-006]: the framework release, the README without the private framework files in its appendix, project URL metadata, `.editorconfig`, `.env.example`, the traceability matrix, review records and a review of the wiki. It changes no behaviour of the program.
 
 ### Out of Scope
 
 - Authentication, a database, deployment or hosting.
 - Editing or deleting cafes.
 - Designing a new front-end (the starting files supply it).
+- Any change to `src/`, `tests/`, `docs/screenshots/`, `tools/` or the wiki pages in the baseline milestone [MIL-006]. That milestone starts no Flask server, takes no screenshot, builds no container image, adds no cafe to the CSV file and runs the tests only.
 
 ## Expected Benefits
 
@@ -81,6 +85,7 @@ Supports the Product Owner's goal of finishing the 100 Days of Code course with 
 | 3 | Runtime dependencies | Only what the assignment needs (Flask, Flask-WTF, Bootstrap-Flask) | `pyproject.toml` |
 | 4 | Documentation languages | 3 (en, da, ms) | Wiki pages present |
 | 5 | Repository metadata | Description and at least 5 topics set | Git host API |
+| 6 | The baseline milestone is done (objective 6) | `framework/scripts/check-readme.sh`, `check-languages.sh` and `check-editorconfig.sh` exit with code 0, `python -m pytest` passes, 100 % of the continuous integration (CI) checks of the pull request of [MIL-006] pass | The script exit codes and the pull request status on the git host |
 
 ## Risks
 
@@ -91,6 +96,7 @@ Supports the Product Owner's goal of finishing the 100 Days of Code course with 
 | A token leaks into the repository | Security incident | Tokens are read from `../.env` into the process environment only, never printed, committed or imported by the project; `.env` is git-ignored |
 | GUI screenshots taken on the host desktop | Takes over the user's mouse and keyboard | Screenshots are taken headless in a Docker container (`framework/process/gui-testing.md`) |
 | Translation quality of da and ms | Wiki unclear | Short sentences; S01 reviews |
+| The documents of the baseline milestone [MIL-006] change documents that were accepted earlier, and an AI stand-in for S01 reviews them | A defect is missed because the review is not independent | Every review record of the baseline says `Mode: autonomous, not independent`, `src/` and `tests/` are not changed, the tests run before and after, and the end-of-run summary lists the reviews for challenge |
 
 ## Assumptions
 
@@ -103,9 +109,10 @@ Supports the Product Owner's goal of finishing the 100 Days of Code course with 
 - Python 3.13+, `venv`, pytest, `pyproject.toml`, `constants.py` for constants.
 - Doxygen comments in the source and a `Doxyfile`.
 - Folders `src/`, `tests/`, `docs/`.
-- Product Owner language English, domain IT.
+- Product Owner language English. The domain is education since [MIL-006] (it was information technology (IT) until then; the documents that [MIL-006] does not change keep the domain `it`, see the Open Issues of [PP-001]).
 - Delivery window 2026-11-09 to 2026-11-13, set by S01.
 - One branch and pull request per milestone.
+- The baseline milestone [MIL-006] starts 2026-11-16 and is finished within one week, by 2026-11-23. An AI stand-in for S01 reviews and accepts the changed documents.
 
 ## Cost–Benefit Assessment
 
@@ -129,3 +136,7 @@ Proceed — the scope is small, the risks are mitigated and the outcome serves a
 
 [40ac86a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/40ac86a92ce1d06f218c8f65b8faaee1d5cd018e
 [ba840a5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/ba840a51f9f6ec2ac266cce649c16bd38b351af6
+[SA-001]: ./stakeholder-analysis.md
+[PP-001]: ./project-plan.md
+[MIL-006]: ./milestones/mil-006-framework-baseline.md
+[61eeec6]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/062-coffee-and-wifi/commit/61eeec673734af9b8f1de5aa1b7641f37a42d07e
